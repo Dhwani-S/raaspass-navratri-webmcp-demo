@@ -1,0 +1,81 @@
+version: 2
+updates:
+  # Evaluator framework and CLI
+  - package-ecosystem: "npm"
+    directory: "/webmcp-evals"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 10
+    groups:
+      ai-sdk:
+        patterns:
+          - "@ai-sdk/*"
+          - "ai"
+      lint-format:
+        patterns:
+          - "oxlint*"
+          - "oxfmt*"
+          - "eslint*"
+          - "@eslint*"
+          - "prettier*"
+      all-other-dependencies:
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 7
+
+  # Demo applications
+  - package-ecosystem: "npm"
+    directories:
+      - "/demos/*"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 10
+    groups:
+      angular:
+        patterns:
+          - "@angular*"
+          - "@angular-devkit/*"
+      react:
+        patterns:
+          - "react*"
+          - "@types/react*"
+      vite:
+        patterns:
+          - "vite*"
+          - "@vitejs/*"
+          - "vitest*"
+          - "@vitest/*"
+      tailwind-postcss:
+        patterns:
+          - "tailwind*"
+          - "@tailwindcss/*"
+          - "postcss*"
+          - "autoprefixer*"
+      lint-format:
+        patterns:
+          - "eslint*"
+          - "@eslint*"
+          - "typescript-eslint*"
+          - "@typescript-eslint/*"
+          - "prettier*"
+      all-other-dependencies:
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 7
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 10
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 7

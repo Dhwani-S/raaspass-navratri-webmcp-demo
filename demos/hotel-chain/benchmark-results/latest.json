@@ -1,0 +1,383 @@
+{
+  "generatedAt": "2026-09-17T12:51:42.227Z",
+  "task": "Find Ahmedabad passes for two adults on 2026-10-10, open GMDC Ground, verify dining, and book for Dhwani Suthar.",
+  "disclaimer": "This deterministic benchmark compares structured WebMCP invocation with direct DOM automation. It does not measure LLM vision, reasoning quality, or model token usage.",
+  "baseUrl": "http://localhost:5173/",
+  "requestedRunsPerMode": 5,
+  "warmupRunsPerMode": 1,
+  "comparison": {
+    "actionReductionPercent": 58.3,
+    "medianTimeReductionPercent": 14.1,
+    "medianTimeDifferenceMs": 216
+  },
+  "summary": [
+    {
+      "mode": "webmcp",
+      "label": "WebMCP tools",
+      "runs": 5,
+      "successfulRuns": 5,
+      "successRate": 100,
+      "averageMs": 1325.8,
+      "medianMs": 1315,
+      "p95Ms": 1370,
+      "minMs": 1295,
+      "maxMs": 1370,
+      "averageActions": 5
+    },
+    {
+      "mode": "dom",
+      "label": "DOM automation",
+      "runs": 5,
+      "successfulRuns": 5,
+      "successRate": 100,
+      "averageMs": 1545.6,
+      "medianMs": 1531,
+      "p95Ms": 1669,
+      "minMs": 1467,
+      "maxMs": 1669,
+      "averageActions": 12
+    }
+  ],
+  "runs": [
+    {
+      "mode": "webmcp",
+      "run": 1,
+      "success": true,
+      "totalMs": 1339,
+      "actionCount": 5,
+      "steps": [
+        {
+          "name": "Search Ahmedabad",
+          "actions": 1,
+          "durationMs": 98
+        },
+        {
+          "name": "Open GMDC Ground",
+          "actions": 1,
+          "durationMs": 93
+        },
+        {
+          "name": "Verify dining",
+          "actions": 1,
+          "durationMs": 69
+        },
+        {
+          "name": "Start checkout",
+          "actions": 1,
+          "durationMs": 43
+        },
+        {
+          "name": "Complete booking",
+          "actions": 1,
+          "durationMs": 43
+        }
+      ]
+    },
+    {
+      "mode": "dom",
+      "run": 1,
+      "success": true,
+      "totalMs": 1590,
+      "actionCount": 12,
+      "steps": [
+        {
+          "name": "Search Ahmedabad",
+          "actions": 5,
+          "durationMs": 278
+        },
+        {
+          "name": "Open GMDC Ground",
+          "actions": 1,
+          "durationMs": 133
+        },
+        {
+          "name": "Verify dining",
+          "actions": 1,
+          "durationMs": 1
+        },
+        {
+          "name": "Start checkout",
+          "actions": 1,
+          "durationMs": 87
+        },
+        {
+          "name": "Complete booking",
+          "actions": 4,
+          "durationMs": 98
+        }
+      ]
+    },
+    {
+      "mode": "dom",
+      "run": 2,
+      "success": true,
+      "totalMs": 1669,
+      "actionCount": 12,
+      "steps": [
+        {
+          "name": "Search Ahmedabad",
+          "actions": 5,
+          "durationMs": 189
+        },
+        {
+          "name": "Open GMDC Ground",
+          "actions": 1,
+          "durationMs": 137
+        },
+        {
+          "name": "Verify dining",
+          "actions": 1,
+          "durationMs": 1
+        },
+        {
+          "name": "Start checkout",
+          "actions": 1,
+          "durationMs": 100
+        },
+        {
+          "name": "Complete booking",
+          "actions": 4,
+          "durationMs": 96
+        }
+      ]
+    },
+    {
+      "mode": "webmcp",
+      "run": 2,
+      "success": true,
+      "totalMs": 1370,
+      "actionCount": 5,
+      "steps": [
+        {
+          "name": "Search Ahmedabad",
+          "actions": 1,
+          "durationMs": 110
+        },
+        {
+          "name": "Open GMDC Ground",
+          "actions": 1,
+          "durationMs": 103
+        },
+        {
+          "name": "Verify dining",
+          "actions": 1,
+          "durationMs": 61
+        },
+        {
+          "name": "Start checkout",
+          "actions": 1,
+          "durationMs": 51
+        },
+        {
+          "name": "Complete booking",
+          "actions": 1,
+          "durationMs": 54
+        }
+      ]
+    },
+    {
+      "mode": "webmcp",
+      "run": 3,
+      "success": true,
+      "totalMs": 1295,
+      "actionCount": 5,
+      "steps": [
+        {
+          "name": "Search Ahmedabad",
+          "actions": 1,
+          "durationMs": 80
+        },
+        {
+          "name": "Open GMDC Ground",
+          "actions": 1,
+          "durationMs": 86
+        },
+        {
+          "name": "Verify dining",
+          "actions": 1,
+          "durationMs": 39
+        },
+        {
+          "name": "Start checkout",
+          "actions": 1,
+          "durationMs": 48
+        },
+        {
+          "name": "Complete booking",
+          "actions": 1,
+          "durationMs": 39
+        }
+      ]
+    },
+    {
+      "mode": "dom",
+      "run": 3,
+      "success": true,
+      "totalMs": 1471,
+      "actionCount": 12,
+      "steps": [
+        {
+          "name": "Search Ahmedabad",
+          "actions": 5,
+          "durationMs": 213
+        },
+        {
+          "name": "Open GMDC Ground",
+          "actions": 1,
+          "durationMs": 95
+        },
+        {
+          "name": "Verify dining",
+          "actions": 1,
+          "durationMs": 1
+        },
+        {
+          "name": "Start checkout",
+          "actions": 1,
+          "durationMs": 82
+        },
+        {
+          "name": "Complete booking",
+          "actions": 4,
+          "durationMs": 85
+        }
+      ]
+    },
+    {
+      "mode": "dom",
+      "run": 4,
+      "success": true,
+      "totalMs": 1531,
+      "actionCount": 12,
+      "steps": [
+        {
+          "name": "Search Ahmedabad",
+          "actions": 5,
+          "durationMs": 207
+        },
+        {
+          "name": "Open GMDC Ground",
+          "actions": 1,
+          "durationMs": 135
+        },
+        {
+          "name": "Verify dining",
+          "actions": 1,
+          "durationMs": 1
+        },
+        {
+          "name": "Start checkout",
+          "actions": 1,
+          "durationMs": 94
+        },
+        {
+          "name": "Complete booking",
+          "actions": 4,
+          "durationMs": 94
+        }
+      ]
+    },
+    {
+      "mode": "webmcp",
+      "run": 4,
+      "success": true,
+      "totalMs": 1310,
+      "actionCount": 5,
+      "steps": [
+        {
+          "name": "Search Ahmedabad",
+          "actions": 1,
+          "durationMs": 92
+        },
+        {
+          "name": "Open GMDC Ground",
+          "actions": 1,
+          "durationMs": 85
+        },
+        {
+          "name": "Verify dining",
+          "actions": 1,
+          "durationMs": 55
+        },
+        {
+          "name": "Start checkout",
+          "actions": 1,
+          "durationMs": 55
+        },
+        {
+          "name": "Complete booking",
+          "actions": 1,
+          "durationMs": 29
+        }
+      ]
+    },
+    {
+      "mode": "webmcp",
+      "run": 5,
+      "success": true,
+      "totalMs": 1315,
+      "actionCount": 5,
+      "steps": [
+        {
+          "name": "Search Ahmedabad",
+          "actions": 1,
+          "durationMs": 94
+        },
+        {
+          "name": "Open GMDC Ground",
+          "actions": 1,
+          "durationMs": 84
+        },
+        {
+          "name": "Verify dining",
+          "actions": 1,
+          "durationMs": 41
+        },
+        {
+          "name": "Start checkout",
+          "actions": 1,
+          "durationMs": 56
+        },
+        {
+          "name": "Complete booking",
+          "actions": 1,
+          "durationMs": 37
+        }
+      ]
+    },
+    {
+      "mode": "dom",
+      "run": 5,
+      "success": true,
+      "totalMs": 1467,
+      "actionCount": 12,
+      "steps": [
+        {
+          "name": "Search Ahmedabad",
+          "actions": 5,
+          "durationMs": 202
+        },
+        {
+          "name": "Open GMDC Ground",
+          "actions": 1,
+          "durationMs": 98
+        },
+        {
+          "name": "Verify dining",
+          "actions": 1,
+          "durationMs": 6
+        },
+        {
+          "name": "Start checkout",
+          "actions": 1,
+          "durationMs": 86
+        },
+        {
+          "name": "Complete booking",
+          "actions": 4,
+          "durationMs": 85
+        }
+      ]
+    }
+  ]
+}

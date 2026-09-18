@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RaasPass WebMCP Benchmark</title>
+<style>
+body{font-family:Segoe UI,sans-serif;margin:0;background:#fffaf2;color:#251036}main{max-width:1080px;margin:auto;padding:48px 24px}h1{font-size:42px;margin-bottom:8px}p{line-height:1.6}.notice{border-left:5px solid #c35727;background:#fff3e3;padding:16px 20px;margin:24px 0}.highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}.highlight{background:#251036;color:white;padding:22px}.highlight strong{display:block;color:#ffd28a;font-size:30px;margin-bottom:5px}table{width:100%;border-collapse:collapse;margin:24px 0;background:white}th,td{text-align:left;padding:14px;border-bottom:1px solid #ead7ca}th{background:#251036;color:white}.pass{color:#167747;font-weight:700}.fail{color:#ba1a1a;font-weight:700}.metric{font-size:14px;color:#762b5f}@media(max-width:700px){.highlights{grid-template-columns:1fr}}</style>
+</head><body><main><p class="metric">RAASPASS · REPRODUCIBLE AUTOMATION BENCHMARK</p><h1>WebMCP vs DOM automation</h1>
+<p>Find Ahmedabad passes for two adults on 2026-10-10, open GMDC Ground, verify dining, and book for Dhwani Suthar.</p><div class="notice"><strong>Read this correctly:</strong> This deterministic benchmark compares structured WebMCP invocation with direct DOM automation. It does not measure LLM vision, reasoning quality, or model token usage.</div>
+<div class="highlights"><div class="highlight"><strong>58.3%</strong>fewer interaction actions</div><div class="highlight"><strong>216 ms</strong>faster median in this run</div><div class="highlight"><strong>100%</strong>WebMCP task success</div></div>
+<h2>Summary</h2><table><thead><tr><th>Mode</th><th>Success</th><th>Median</th><th>P95</th><th>Avg. actions</th></tr></thead><tbody>
+    <tr>
+      <td>WebMCP tools</td>
+      <td>5/5 (100%)</td>
+      <td>1315 ms</td>
+      <td>1370 ms</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>DOM automation</td>
+      <td>5/5 (100%)</td>
+      <td>1531 ms</td>
+      <td>1669 ms</td>
+      <td>12</td>
+    </tr></tbody></table>
+<h2>Individual runs</h2><table><thead><tr><th>Mode</th><th>Run</th><th>Result</th><th>Duration</th><th>Actions</th><th>Error</th></tr></thead><tbody>
+    <tr>
+      <td>webmcp</td>
+      <td>1</td>
+      <td class="pass">PASS</td>
+      <td>1339 ms</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dom</td>
+      <td>1</td>
+      <td class="pass">PASS</td>
+      <td>1590 ms</td>
+      <td>12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dom</td>
+      <td>2</td>
+      <td class="pass">PASS</td>
+      <td>1669 ms</td>
+      <td>12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>webmcp</td>
+      <td>2</td>
+      <td class="pass">PASS</td>
+      <td>1370 ms</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>webmcp</td>
+      <td>3</td>
+      <td class="pass">PASS</td>
+      <td>1295 ms</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dom</td>
+      <td>3</td>
+      <td class="pass">PASS</td>
+      <td>1471 ms</td>
+      <td>12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dom</td>
+      <td>4</td>
+      <td class="pass">PASS</td>
+      <td>1531 ms</td>
+      <td>12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>webmcp</td>
+      <td>4</td>
+      <td class="pass">PASS</td>
+      <td>1310 ms</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>webmcp</td>
+      <td>5</td>
+      <td class="pass">PASS</td>
+      <td>1315 ms</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dom</td>
+      <td>5</td>
+      <td class="pass">PASS</td>
+      <td>1467 ms</td>
+      <td>12</td>
+      <td></td>
+    </tr></tbody></table>
+<p>Generated 2026-09-17T12:51:42.227Z against http://localhost:5173/.</p></main></body></html>

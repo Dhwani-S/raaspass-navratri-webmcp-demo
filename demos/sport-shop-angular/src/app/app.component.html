@@ -1,0 +1,19 @@
+<!--
+ Copyright 2026 Google LLC
+ SPDX-License-Identifier: Apache-2.0
+-->
+
+<div class="app-push-container min-h-screen" [class.app-pushed]="(agentService.isOpen$ | async)">
+    <app-header></app-header>
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+    <app-footer></app-footer>
+</div>
+
+<app-agent-drawer></app-agent-drawer>
+
+@if (uiService.isCartOpen$ | async) {
+    <app-cart-modal (close)="uiService.closeCart()">
+    </app-cart-modal>
+}
